@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yumaster.FlowEngine", "yumaster.FlowEngine\yumaster.FlowEngine.csproj", "{3CC048E6-F874-48A8-ADA4-71D0F25306BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{73F05C78-6957-4A31-AD23-AEE257CA2188}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yumaster.Repository", "yumaster.Repository\yumaster.Repository.csproj", "{BE47D950-4FB2-47C3-896A-32344FFDE3E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{3CC048E6-F874-48A8-ADA4-71D0F25306BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CC048E6-F874-48A8-ADA4-71D0F25306BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CC048E6-F874-48A8-ADA4-71D0F25306BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73F05C78-6957-4A31-AD23-AEE257CA2188}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73F05C78-6957-4A31-AD23-AEE257CA2188}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73F05C78-6957-4A31-AD23-AEE257CA2188}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73F05C78-6957-4A31-AD23-AEE257CA2188}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE47D950-4FB2-47C3-896A-32344FFDE3E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE47D950-4FB2-47C3-896A-32344FFDE3E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE47D950-4FB2-47C3-896A-32344FFDE3E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE47D950-4FB2-47C3-896A-32344FFDE3E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

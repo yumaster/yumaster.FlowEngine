@@ -3,3 +3,12 @@ D:\vscode\master\yumaster.FlowEngine\yumaster.FlowEngine\yumaster.FlowEngine\bin
 D:\vscode\master\yumaster.FlowEngine\yumaster.FlowEngine\yumaster.FlowEngine\obj\Debug\netcoreapp3.1\yumaster.FlowEngine.csprojAssemblyReference.cache
 D:\vscode\master\yumaster.FlowEngine\yumaster.FlowEngine\yumaster.FlowEngine\obj\Debug\netcoreapp3.1\yumaster.FlowEngine.AssemblyInfoInputs.cache
 D:\vscode\master\yumaster.FlowEngine\yumaster.FlowEngine\yumaster.FlowEngine\obj\Debug\netcoreapp3.1\yumaster.FlowEngine.AssemblyInfo.cs
+D:\vscode\master\yumaster.FlowEngine\yumaster.FlowEngine\yumaster.FlowEngine\bin\Debug\netcoreapp3.1\Infrastructure.dll
+D:\vscode\master\yumaster.FlowEngine\yumaster.FlowEngine\yumaster.FlowEngine\bin\Debug\netcoreapp3.1\yumaster.FlowEngine.pdb
+D:\vscode\master\yumaster.FlowEngine\yumaster.FlowEngine\yumaster.FlowEngine\bin\Debug\netcoreapp3.1\yumaster.Repository.dll
+D:\vscode\master\yumaster.FlowEngine\yumaster.FlowEngine\yumaster.FlowEngine\bin\Debug\netcoreapp3.1\Infrastructure.pdb
+D:\vscode\master\yumaster.FlowEngine\yumaster.FlowEngine\yumaster.FlowEngine\bin\Debug\netcoreapp3.1\yumaster.Repository.pdb
+D:\vscode\master\yumaster.FlowEngine\yumaster.FlowEngine\yumaster.FlowEngine\obj\Debug\netcoreapp3.1\yumaster.FlowEngine.csproj.CoreCompileInputs.cache
+D:\vscode\master\yumaster.FlowEngine\yumaster.FlowEngine\yumaster.FlowEngine\obj\Debug\netcoreapp3.1\yumaster.FlowEngine.csproj.CopyComplete
+D:\vscode\master\yumaster.FlowEngine\yumaster.FlowEngine\yumaster.FlowEngine\obj\Debug\netcoreapp3.1\yumaster.FlowEngine.dll
+D:\vscode\master\yumaster.FlowEngine\yumaster.FlowEngine\yumaster.FlowEngine\obj\Debug\netcoreapp3.1\yumaster.FlowEngine.pdb

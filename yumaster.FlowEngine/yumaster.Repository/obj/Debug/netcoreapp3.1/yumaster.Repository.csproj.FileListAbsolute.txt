@@ -1,0 +1,9 @@
+D:\vscode\master\yumaster.FlowEngine\yumaster.FlowEngine\yumaster.Repository\bin\Debug\netcoreapp3.1\yumaster.Repository.deps.json
+D:\vscode\master\yumaster.FlowEngine\yumaster.FlowEngine\yumaster.Repository\bin\Debug\netcoreapp3.1\yumaster.Repository.dll
+D:\vscode\master\yumaster.FlowEngine\yumaster.FlowEngine\yumaster.Repository\bin\Debug\netcoreapp3.1\yumaster.Repository.pdb
+D:\vscode\master\yumaster.FlowEngine\yumaster.FlowEngine\yumaster.Repository\obj\Debug\netcoreapp3.1\yumaster.Repository.csprojAssemblyReference.cache
+D:\vscode\master\yumaster.FlowEngine\yumaster.FlowEngine\yumaster.Repository\obj\Debug\netcoreapp3.1\yumaster.Repository.csproj.CoreCompileInputs.cache
+D:\vscode\master\yumaster.FlowEngine\yumaster.FlowEngine\yumaster.Repository\obj\Debug\netcoreapp3.1\yumaster.Repository.AssemblyInfoInputs.cache
+D:\vscode\master\yumaster.FlowEngine\yumaster.FlowEngine\yumaster.Repository\obj\Debug\netcoreapp3.1\yumaster.Repository.AssemblyInfo.cs
+D:\vscode\master\yumaster.FlowEngine\yumaster.FlowEngine\yumaster.Repository\obj\Debug\netcoreapp3.1\yumaster.Repository.dll
+D:\vscode\master\yumaster.FlowEngine\yumaster.FlowEngine\yumaster.Repository\obj\Debug\netcoreapp3.1\yumaster.Repository.pdb
