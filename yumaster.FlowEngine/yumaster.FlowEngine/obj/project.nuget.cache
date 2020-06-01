@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "l4yImURn+nw/pVwWkdKnI/FIs+aE9/XFtucFcNrLZ+AdziMpZA0og/L8u/NopzxkM0sNaVf36fYELrUDg6by3Q==",
+  "success": true,
+  "projectFilePath": "D:\\vscode\\master\\yumaster.FlowEngine\\yumaster.FlowEngine\\yumaster.FlowEngine\\yumaster.FlowEngine.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\yumas\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
