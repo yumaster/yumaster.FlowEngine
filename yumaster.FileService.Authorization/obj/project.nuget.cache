@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "dMRVfQ49MApRtOPexl58yyGtIedWw/+ieUgckiqwakTzRHbf8Yy5LAI8phRMdFqJH2SgKquA2t4+iChcZnrOxQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\yumas\\source\\repos\\yumaster.FileService\\yumaster.FileService.Authorization\\yumaster.FileService.Authorization.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\yumas\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.4\\microsoft.extensions.dependencyinjection.abstractions.3.1.4.nupkg.sha512",
+    "C:\\Users\\yumas\\.nuget\\packages\\microsoft.extensions.options\\3.1.4\\microsoft.extensions.options.3.1.4.nupkg.sha512",
+    "C:\\Users\\yumas\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.4\\microsoft.extensions.primitives.3.1.4.nupkg.sha512"
+  ],
+  "logs": []
+}

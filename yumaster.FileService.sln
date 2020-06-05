@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yumaster.FileService.Authorization", "yumaster.FileService.Authorization\yumaster.FileService.Authorization.csproj", "{D5AC9A3E-2A35-43AD-9B1E-517F6ED8EDF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5AC9A3E-2A35-43AD-9B1E-517F6ED8EDF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5AC9A3E-2A35-43AD-9B1E-517F6ED8EDF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5AC9A3E-2A35-43AD-9B1E-517F6ED8EDF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5AC9A3E-2A35-43AD-9B1E-517F6ED8EDF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {027B5603-7D63-461E-8C21-ACE1EBD38DB4}
+	EndGlobalSection
+EndGlobal
