@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yumas\\source\\repos\\yumaster.FileService\\yumaster.FileService.Authorization\\yumaster.FileService.Authorization.csproj": {}
+    "D:\\vscode\\master\\yumaster.FileService\\yumaster.FileService.Authorization\\yumaster.FileService.Authorization.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yumas\\source\\repos\\yumaster.FileService\\yumaster.FileService.Authorization\\yumaster.FileService.Authorization.csproj": {
+    "D:\\vscode\\master\\yumaster.FileService\\yumaster.FileService.Authorization\\yumaster.FileService.Authorization.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yumas\\source\\repos\\yumaster.FileService\\yumaster.FileService.Authorization\\yumaster.FileService.Authorization.csproj",
+        "projectUniqueName": "D:\\vscode\\master\\yumaster.FileService\\yumaster.FileService.Authorization\\yumaster.FileService.Authorization.csproj",
         "projectName": "yumaster.FileService.Authorization",
-        "projectPath": "C:\\Users\\yumas\\source\\repos\\yumaster.FileService\\yumaster.FileService.Authorization\\yumaster.FileService.Authorization.csproj",
+        "projectPath": "D:\\vscode\\master\\yumaster.FileService\\yumaster.FileService.Authorization\\yumaster.FileService.Authorization.csproj",
         "packagesPath": "C:\\Users\\yumas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yumas\\source\\repos\\yumaster.FileService\\yumaster.FileService.Authorization\\obj\\",
+        "outputPath": "D:\\vscode\\master\\yumaster.FileService\\yumaster.FileService.Authorization\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
