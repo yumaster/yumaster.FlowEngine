@@ -1,0 +1,12 @@
+D:\vscode\master\yumaster.FileService\yumaster.FileService.Sdk.Client\bin\Debug\netcoreapp3.1\yumaster.FileService.Sdk.Client.deps.json
+D:\vscode\master\yumaster.FileService\yumaster.FileService.Sdk.Client\bin\Debug\netcoreapp3.1\yumaster.FileService.Sdk.Client.dll
+D:\vscode\master\yumaster.FileService\yumaster.FileService.Sdk.Client\obj\Debug\netcoreapp3.1\yumaster.FileService.Sdk.Client.AssemblyInfoInputs.cache
+D:\vscode\master\yumaster.FileService\yumaster.FileService.Sdk.Client\obj\Debug\netcoreapp3.1\yumaster.FileService.Sdk.Client.AssemblyInfo.cs
+D:\vscode\master\yumaster.FileService\yumaster.FileService.Sdk.Client\bin\Debug\netcoreapp3.1\yumaster.FileService.Sdk.Client.pdb
+D:\vscode\master\yumaster.FileService\yumaster.FileService.Sdk.Client\obj\Debug\netcoreapp3.1\yumaster.FileService.Sdk.Client.csprojAssemblyReference.cache
+D:\vscode\master\yumaster.FileService\yumaster.FileService.Sdk.Client\obj\Debug\netcoreapp3.1\yumaster.FileService.Sdk.Client.csproj.CoreCompileInputs.cache
+D:\vscode\master\yumaster.FileService\yumaster.FileService.Sdk.Client\obj\Debug\netcoreapp3.1\yumaster.FileService.Sdk.Client.dll
+D:\vscode\master\yumaster.FileService\yumaster.FileService.Sdk.Client\obj\Debug\netcoreapp3.1\yumaster.FileService.Sdk.Client.pdb
+D:\vscode\master\yumaster.FileService\yumaster.FileService.Sdk.Client\bin\Debug\netcoreapp3.1\yumaster.FileService.Authorization.dll
+D:\vscode\master\yumaster.FileService\yumaster.FileService.Sdk.Client\bin\Debug\netcoreapp3.1\yumaster.FileService.Authorization.pdb
+D:\vscode\master\yumaster.FileService\yumaster.FileService.Sdk.Client\obj\Debug\netcoreapp3.1\yumaster.FileService.Sdk.Client.csproj.CopyComplete

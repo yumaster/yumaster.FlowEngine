@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "7GDHkz46GnZs9M0LtYhoYiCVr6qEJvftGYcFrYgpPEf0pG3EGfJ5WtAICtItqGTf9S1M9ZR4bfT7z7sWogbckg==",
+  "success": true,
+  "projectFilePath": "D:\\vscode\\master\\yumaster.FileService\\yumaster.FileService.Sdk.Client\\yumaster.FileService.Sdk.Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\yumas\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.4\\microsoft.extensions.dependencyinjection.abstractions.3.1.4.nupkg.sha512",
+    "C:\\Users\\yumas\\.nuget\\packages\\microsoft.extensions.options\\3.1.4\\microsoft.extensions.options.3.1.4.nupkg.sha512",
+    "C:\\Users\\yumas\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.4\\microsoft.extensions.primitives.3.1.4.nupkg.sha512",
+    "C:\\Users\\yumas\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
