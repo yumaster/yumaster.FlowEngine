@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yumaster.FileService.Sdk.Se
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yumaster.FileService.Sdk.Client", "yumaster.FileService.Sdk.Client\yumaster.FileService.Sdk.Client.csproj", "{8526FA36-CF41-4532-9C19-88AE7A34A298}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yumaster.FileService.WebApi", "yumaster.FileService.WebApi\yumaster.FileService.WebApi.csproj", "{462A12EB-DDF3-4DD3-93BD-62CF4126ED29}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{8526FA36-CF41-4532-9C19-88AE7A34A298}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8526FA36-CF41-4532-9C19-88AE7A34A298}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8526FA36-CF41-4532-9C19-88AE7A34A298}.Release|Any CPU.Build.0 = Release|Any CPU
+		{462A12EB-DDF3-4DD3-93BD-62CF4126ED29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{462A12EB-DDF3-4DD3-93BD-62CF4126ED29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{462A12EB-DDF3-4DD3-93BD-62CF4126ED29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{462A12EB-DDF3-4DD3-93BD-62CF4126ED29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
