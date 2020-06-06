@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using yumaster.FileService.Db.Repositories;
 using yumaster.FileService.Db.Repositories.Impls;
 
+[assembly:HostingStartup(typeof(yumaster.FileService.Db.DbHostingStartup))]
 namespace yumaster.FileService.Db
 {
     /// <summary>

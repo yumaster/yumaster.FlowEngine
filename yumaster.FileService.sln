@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "yumaster.FileService.Authorization", "yumaster.FileService.Authorization\yumaster.FileService.Authorization.csproj", "{D5AC9A3E-2A35-43AD-9B1E-517F6ED8EDF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yumaster.FileService.Db", "yumaster.FileService.Db\yumaster.FileService.Db.csproj", "{C810BDCF-1216-4B54-B58F-A22D01C59FD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "yumaster.FileService.Db", "yumaster.FileService.Db\yumaster.FileService.Db.csproj", "{C810BDCF-1216-4B54-B58F-A22D01C59FD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yumaster.FileService.Service", "yumaster.FileService.Service\yumaster.FileService.Service.csproj", "{F9B18AB4-EA24-4E2D-8214-1338F80BB2B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{C810BDCF-1216-4B54-B58F-A22D01C59FD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C810BDCF-1216-4B54-B58F-A22D01C59FD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C810BDCF-1216-4B54-B58F-A22D01C59FD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9B18AB4-EA24-4E2D-8214-1338F80BB2B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9B18AB4-EA24-4E2D-8214-1338F80BB2B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9B18AB4-EA24-4E2D-8214-1338F80BB2B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9B18AB4-EA24-4E2D-8214-1338F80BB2B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
