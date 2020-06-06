@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yumaster.FileService.Authorization", "yumaster.FileService.Authorization\yumaster.FileService.Authorization.csproj", "{D5AC9A3E-2A35-43AD-9B1E-517F6ED8EDF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "yumaster.FileService.Authorization", "yumaster.FileService.Authorization\yumaster.FileService.Authorization.csproj", "{D5AC9A3E-2A35-43AD-9B1E-517F6ED8EDF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yumaster.FileService.Db", "yumaster.FileService.Db\yumaster.FileService.Db.csproj", "{C810BDCF-1216-4B54-B58F-A22D01C59FD7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{D5AC9A3E-2A35-43AD-9B1E-517F6ED8EDF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5AC9A3E-2A35-43AD-9B1E-517F6ED8EDF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5AC9A3E-2A35-43AD-9B1E-517F6ED8EDF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C810BDCF-1216-4B54-B58F-A22D01C59FD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C810BDCF-1216-4B54-B58F-A22D01C59FD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C810BDCF-1216-4B54-B58F-A22D01C59FD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C810BDCF-1216-4B54-B58F-A22D01C59FD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
