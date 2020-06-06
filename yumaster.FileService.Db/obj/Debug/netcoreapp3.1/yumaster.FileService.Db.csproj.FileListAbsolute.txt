@@ -1,9 +1,9 @@
 D:\vscode\master\yumaster.FileService\yumaster.FileService.Db\bin\Debug\netcoreapp3.1\yumaster.FileService.Db.deps.json
 D:\vscode\master\yumaster.FileService\yumaster.FileService.Db\bin\Debug\netcoreapp3.1\yumaster.FileService.Db.dll
+D:\vscode\master\yumaster.FileService\yumaster.FileService.Db\bin\Debug\netcoreapp3.1\yumaster.FileService.Db.pdb
 D:\vscode\master\yumaster.FileService\yumaster.FileService.Db\obj\Debug\netcoreapp3.1\yumaster.FileService.Db.csprojAssemblyReference.cache
+D:\vscode\master\yumaster.FileService\yumaster.FileService.Db\obj\Debug\netcoreapp3.1\yumaster.FileService.Db.csproj.CoreCompileInputs.cache
 D:\vscode\master\yumaster.FileService\yumaster.FileService.Db\obj\Debug\netcoreapp3.1\yumaster.FileService.Db.AssemblyInfoInputs.cache
 D:\vscode\master\yumaster.FileService\yumaster.FileService.Db\obj\Debug\netcoreapp3.1\yumaster.FileService.Db.AssemblyInfo.cs
-D:\vscode\master\yumaster.FileService\yumaster.FileService.Db\bin\Debug\netcoreapp3.1\yumaster.FileService.Db.pdb
-D:\vscode\master\yumaster.FileService\yumaster.FileService.Db\obj\Debug\netcoreapp3.1\yumaster.FileService.Db.csproj.CoreCompileInputs.cache
 D:\vscode\master\yumaster.FileService\yumaster.FileService.Db\obj\Debug\netcoreapp3.1\yumaster.FileService.Db.dll
 D:\vscode\master\yumaster.FileService\yumaster.FileService.Db\obj\Debug\netcoreapp3.1\yumaster.FileService.Db.pdb
