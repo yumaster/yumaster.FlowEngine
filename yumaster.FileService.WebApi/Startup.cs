@@ -15,6 +15,7 @@ using yumaster.FileService.WebApi.AutoReview;
 using yumaster.FileService.WebApi.Extensions;
 using yumaster.FileService.WebApi.Filters;
 using yumaster.FileService.WebApi.Options;
+using yumaster.FileService.WebApi.Swagger;
 
 namespace yumaster.FileService.WebApi
 {
@@ -70,8 +71,8 @@ namespace yumaster.FileService.WebApi
             {
                 opt.AddPolicy("AllowAny", b => b.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin().AllowCredentials());
             });
-            //if (_env.IsDevelopment())
-            //    services.AddSwaggerService(PlatformServices.Default.Application.ApplicationBasePath);
+            if (_env.IsDevelopment())
+                services.AddSwaggerService(PlatformServices.Default.Application.ApplicationBasePath);
 
             //确保服务依赖的正确性，放到所有注册服务代码后调用
             if (_env.IsDevelopment())
@@ -101,7 +102,7 @@ namespace yumaster.FileService.WebApi
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                //app.useswa
+                app.UseSwaggerService();
                 
             }else
             {
