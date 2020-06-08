@@ -102,7 +102,7 @@ namespace yumaster.FileService.WebApi
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwaggerService();
+                //app.UseSwaggerService();
                 
             }else
             {
