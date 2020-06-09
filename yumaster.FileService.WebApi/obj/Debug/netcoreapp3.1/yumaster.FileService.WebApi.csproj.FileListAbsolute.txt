@@ -134,7 +134,7 @@ D:\vscode\master\yumaster.FileService\yumaster.FileService.WebApi\bin\Debug\netc
 D:\vscode\master\yumaster.FileService\yumaster.FileService.WebApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll
 D:\vscode\master\yumaster.FileService\yumaster.FileService.WebApi\bin\Debug\netcoreapp3.1\NLog.dll
 D:\vscode\master\yumaster.FileService\yumaster.FileService.WebApi\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+D:\vscode\master\yumaster.FileService\yumaster.FileService.WebApi\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 D:\vscode\master\yumaster.FileService\yumaster.FileService.WebApi\obj\Debug\netcoreapp3.1\yumaster.FileService.WebApi.csproj.CoreCompileInputs.cache
 D:\vscode\master\yumaster.FileService\yumaster.FileService.WebApi\obj\Debug\netcoreapp3.1\yumaster.FileService.WebApi.MvcApplicationPartsAssemblyInfo.cs
 D:\vscode\master\yumaster.FileService\yumaster.FileService.WebApi\obj\Debug\netcoreapp3.1\yumaster.FileService.WebApi.MvcApplicationPartsAssemblyInfo.cache
-D:\vscode\master\yumaster.FileService\yumaster.FileService.WebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.dll

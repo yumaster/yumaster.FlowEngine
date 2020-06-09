@@ -52,7 +52,7 @@ namespace yumaster.FileService.WebApi.Controllers
 
             var filePath = _storageSvce.GetRawFilePath(fToken.PseudoId, fToken.FileCreateTime, fToken.FileId);
             //await _storageSvce.ReceiveToPathAsync(model.File, filePath);
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
 
             return Json(new Result(ResultErrorCodes.Success));
         }
