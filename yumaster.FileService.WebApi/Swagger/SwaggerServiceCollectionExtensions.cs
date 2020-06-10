@@ -88,6 +88,20 @@ namespace yumaster.FileService.WebApi.Swagger
                 //});
 
                 options.IncludeXmlComments(Path.Combine(appBasePath, "yumaster.FileService.WebApi.xml"));
+
+                #region 权限验证信息
+                //添加一个必须的全局安全信息,和AddSecurityDefinition方法指定的方案名称要一致
+                var security = new Dictionary<string, IEnumerable<string>> { { "Bearer", new string[] { } } };
+                options.AddSecurityRequirement(security);
+
+                options.AddSecurityDefinition("Bearer", new ApiKeyScheme
+                {
+                    Description = "格式|Bearer {token}",
+                    Name = "Authorization",//jwt默认的参数名称
+                    In = "header",//jwt默认在请求头中存放Authorization信息
+                    Type = "apiKey"
+                });
+                #endregion
             });
 
             services.AddSingleton<XmlCommentManager>();

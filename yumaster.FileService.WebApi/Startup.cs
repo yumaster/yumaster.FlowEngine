@@ -1,10 +1,14 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.PlatformAbstractions;
+using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
+using System;
+using System.Text;
 using yumaster.FileService.Authorization;
 using yumaster.FileService.Authorization.Codecs;
 using yumaster.FileService.Db.Options;
@@ -78,7 +82,41 @@ namespace yumaster.FileService.WebApi
 
             if (_env.IsDevelopment())
                 services.AddSwaggerService(PlatformServices.Default.Application.ApplicationBasePath);
+            #region Authorize 基于策略的授权（简单版）
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("Client", policy => policy.RequireRole("Client").Build());
+                options.AddPolicy("Admin", policy => policy.RequireRole("Admin").Build());
+                options.AddPolicy("SystemOrAdmin", policy => policy.RequireRole("Admin", "System"));
+            });
+            //====================================
+            //读取配置文件
+            var symmetricKeyAsBase64 = _cfg["Audience:Secret"];
+            var keyByteArray = Encoding.ASCII.GetBytes(symmetricKeyAsBase64);
+            var signingKey = new SymmetricSecurityKey(keyByteArray);
+            //2.1【认证】
+            services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+             .AddJwtBearer(o =>
+             {
+                 o.TokenValidationParameters = new TokenValidationParameters
+                 {
+                     ValidateIssuerSigningKey = true,
+                     IssuerSigningKey = signingKey,
+                     ValidateIssuer = true,
+                     ValidIssuer = _cfg["Audience:Issuer"],//发行人
+                     ValidateAudience = true,
+                     ValidAudience = _cfg["Audience:Audience"],//订阅人
+                     ValidateLifetime = true,
+                     ClockSkew = TimeSpan.Zero,
+                     RequireExpirationTime = true,
+                 };
+             });
 
+            #endregion
             //确保服务依赖的正确性，放到所有注册服务代码后调用
             if (_env.IsDevelopment())
             {
@@ -107,11 +145,15 @@ namespace yumaster.FileService.WebApi
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwaggerService();
-            }else
+            }
+            else
             {
                 app.UseExceptionHandler(new GlobalExceptionHandlerOptions());
             }
+
+            app.UseSwaggerService();
+            app.UseAuthentication();
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
