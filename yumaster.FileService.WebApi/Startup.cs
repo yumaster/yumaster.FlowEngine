@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.PlatformAbstractions;
-using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
 using System.IO;
 using yumaster.FileService.Authorization;
@@ -17,6 +16,7 @@ using yumaster.FileService.WebApi.AutoReview;
 using yumaster.FileService.WebApi.Extensions;
 using yumaster.FileService.WebApi.Filters;
 using yumaster.FileService.WebApi.Options;
+using yumaster.FileService.WebApi.Swagger;
 
 namespace yumaster.FileService.WebApi
 {
@@ -57,41 +57,29 @@ namespace yumaster.FileService.WebApi
             services.Configure<ManageOption>(_cfg.GetSection("Manage"));
             services.Configure<ClusterOption>(_cfg.GetSection("Cluster"));
             #region UEditor
+
             services.AddSingleton<UEditorOption>();
+
             #endregion
+
             services.AddMvc(opt =>
             {
                 opt.Filters.Add<ValidateModelAttribute>();
-            }).AddNewtonsoftJson(opt =>
+            }).AddJsonOptions(opt =>
             {
                 var setts = opt.SerializerSettings;
                 setts.DateTimeZoneHandling = Newtonsoft.Json.DateTimeZoneHandling.Local;
                 setts.DateFormatHandling = DateFormatHandling.IsoDateFormat;
                 setts.DateFormatString = "yyyy'-'MM'-'dd'T'HH':'mm':'ssK";
             });
+
             services.AddCors(opt =>
             {
                 opt.AddPolicy("AllowAny", b => b.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin().AllowCredentials());
             });
-            #region swagger
-            //if (_env.IsDevelopment())
-            //    services.AddSwaggerService(PlatformServices.Default.Application.ApplicationBasePath);
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo
-                {
-                    Version = "v1",//版本号
-                    Title = $"{apiName}接口文档",
-                    Description = $"{apiName}HTTP API V1",//编辑描述
-                    Contact = new OpenApiContact { Name = apiName, Email = "yumaster@yeah.net" },//联系方式
-                    License = new OpenApiLicense { Name = apiName }//编辑许可证
-                });
-                c.OrderActionsBy(o => o.RelativePath);
-                var xmlPath = Path.Combine(Microsoft.DotNet.PlatformAbstractions.ApplicationEnvironment.ApplicationBasePath, "yumaster.FileService.WebApi.xml");// 配置接口文档文件路径
-                c.IncludeXmlComments(xmlPath, true); // 把接口文档的路径配置进去。第二个参数表示的是是否开启包含对Controller的注释容纳
-            });
-            #endregion
 
+            if (_env.IsDevelopment())
+                services.AddSwaggerService(PlatformServices.Default.Application.ApplicationBasePath);
 
             //确保服务依赖的正确性，放到所有注册服务代码后调用
             if (_env.IsDevelopment())
@@ -121,21 +109,17 @@ namespace yumaster.FileService.WebApi
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                //app.UseSwaggerService();
+                app.UseSwaggerService();
             }else
             {
                 app.UseExceptionHandler(new GlobalExceptionHandlerOptions());
             }
-            #region Swagger
-            app.UseSwagger();
-            app.UseSwaggerUI(c =>
+            app.UseMvc(routes =>
             {
-                c.SwaggerEndpoint($"/swagger/v1/swagger.json", $"{apiName} v1");
-                c.RoutePrefix = "";
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
             });
-            #endregion
-            app.UseRouting();
-
             app.UseStaticFiles();
             app.UseStatusCodePages("text/html", "<div>There is a problem with the page you're visiting, StatusCode: {0}</div>");
         }

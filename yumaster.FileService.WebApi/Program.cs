@@ -13,25 +13,30 @@ namespace yumaster.FileService.WebApi
 {
     public class Program
     {
-        private static ILogger logger;
+        private static ILogger _logger;
+
         public static void Main(string[] args)
         {
-            //CreateHostBuilder(args).Build().Run();
             try
             {
-                var webHost = CreateHostBuilder(args).Build();
+                var webHost = BuildWebHost(args);
+
                 var hostEnv = webHost.Services.GetRequiredService<IHostingEnvironment>();
                 if (!Directory.Exists(hostEnv.GetConfigPath()))
                 {
                     Console.WriteLine("Unable to detect the confs path");
                     return;
                 }
+
                 //logger
                 var logFac = webHost.Services.GetRequiredService<ILoggerFactory>();
-                logger = logFac.CreateLogger<Program>();
+                _logger = logFac.CreateLogger<Program>();
+
                 webHost.Run();
+
                 System.Threading.Tasks.TaskScheduler.UnobservedTaskException += TaskScheduler_UnobservedTaskException;
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.ToString());
                 Console.WriteLine("Press any key to continue...");
@@ -39,48 +44,53 @@ namespace yumaster.FileService.WebApi
             }
         }
 
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
+        private static IWebHost BuildWebHost(string[] args)
+        {
+            var builder = new WebHostBuilder()
+                .UseContentRoot(Directory.GetCurrentDirectory())
+                .ConfigureAppConfiguration((hostCtx, cfg) =>
                 {
-                    webBuilder.UseContentRoot(Directory.GetCurrentDirectory())
-                    .ConfigureAppConfiguration((hostCtx, cfg) =>
-                    {
-                        cfg.AddEnvironmentVariables();
-                        if (args != null)
-                            cfg.AddCommandLine(args);
-                        cfg.SetBasePath(Path.Combine(hostCtx.HostingEnvironment.ContentRootPath, "confs"));
-                        var env = hostCtx.HostingEnvironment as IHostingEnvironment;
-                        cfg.SetBasePath(env.GetConfigPath());
-                        cfg.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                    cfg.AddEnvironmentVariables();
+                    if (args != null)
+                        cfg.AddCommandLine(args);
+
+                    cfg.SetBasePath(hostCtx.HostingEnvironment.GetConfigPath());
+
+                    var env = hostCtx.HostingEnvironment;
+                    cfg.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
                         .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true, reloadOnChange: true);
-                        cfg.AddJsonFile("image-sizes.json", optional: false, reloadOnChange: true);
-                        cfg.AddJsonFile("mimes.json", optional: false, reloadOnChange: true);
-                        if (env.IsDevelopment())
+                    cfg.AddJsonFile("image-sizes.json", optional: false, reloadOnChange: true);
+                    cfg.AddJsonFile("mimes.json", optional: false, reloadOnChange: true);
+
+                    if (env.IsDevelopment())
+                    {
+                        var appAssembly = Assembly.Load(new AssemblyName(env.ApplicationName));
+                        if (appAssembly != null)
                         {
-                            var appAssembly = Assembly.Load(new AssemblyName(env.ApplicationName));
-                            if (appAssembly != null)
-                                cfg.AddUserSecrets(appAssembly, optional: true);
+                            cfg.AddUserSecrets(appAssembly, optional: true);
                         }
-                    })
-                     .ConfigureLogging((ctx, logging) =>
-                     {
-                         logging.AddConfiguration(ctx.Configuration.GetSection("Logging"));
-                         logging.AddConsole();
-                         logging.AddDebug();
-                         logging.AddNLog(ctx.HostingEnvironment as IHostingEnvironment, ctx.Configuration);
-                     })
-                     .UseKestrel(opts =>
-                     {
-                         opts.Limits.MaxRequestBodySize = 524288000;
-                     })
-                     .UseDefaultServiceProvider((context, options) =>
-                     {
-                         options.ValidateScopes = context.HostingEnvironment.IsDevelopment();
-                     })
-                     .UseSetting(WebHostDefaults.HostingStartupAssembliesKey, BuildHostingStartupAssemblies())
-                     .UseStartup<Startup>();
-                });
+                    }
+                })
+                .ConfigureLogging((ctx, logging) =>
+                {
+                    logging.AddConfiguration(ctx.Configuration.GetSection("Logging"));
+                    logging.AddConsole();
+                    logging.AddDebug();
+                    logging.AddNLog(ctx.HostingEnvironment, ctx.Configuration);
+                })
+                .UseKestrel(opts =>
+                {
+                    opts.Limits.MaxRequestBodySize = 524288000;
+                })
+                .UseDefaultServiceProvider((context, options) =>
+                {
+                    options.ValidateScopes = context.HostingEnvironment.IsDevelopment();
+                })
+                .UseSetting(WebHostDefaults.HostingStartupAssembliesKey, BuildHostingStartupAssemblies())
+                .UseStartup<Startup>();
+
+            return builder.Build();
+        }
 
         private static string BuildHostingStartupAssemblies()
         {
@@ -94,13 +104,7 @@ namespace yumaster.FileService.WebApi
         private static void TaskScheduler_UnobservedTaskException(object sender, System.Threading.Tasks.UnobservedTaskExceptionEventArgs e)
         {
             e.SetObserved();
-            logger.LogError($"{nameof(TaskScheduler_UnobservedTaskException)}: {e.Exception}");
+            _logger.LogError($"{nameof(TaskScheduler_UnobservedTaskException)}: {e.Exception}");
         }
-        //public static IHostBuilder CreateHostBuilder(string[] args) =>
-        //    Host.CreateDefaultBuilder(args)
-        //        .ConfigureWebHostDefaults(webBuilder =>
-        //        {
-        //            webBuilder.UseStartup<Startup>();
-        //        })
     }
 }
