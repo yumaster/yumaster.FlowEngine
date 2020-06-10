@@ -4,6 +4,7 @@ using System.Runtime.InteropServices;
 using yumaster.FileService.Authorization;
 using yumaster.FileService.Service.ServiceImpls;
 
+[assembly: HostingStartup(typeof(yumaster.FileService.Service.ServiceHostingStartup))]
 namespace yumaster.FileService.Service
 {
     /// <summary>

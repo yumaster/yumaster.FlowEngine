@@ -5,7 +5,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.PlatformAbstractions;
 using Newtonsoft.Json;
-using System.IO;
 using yumaster.FileService.Authorization;
 using yumaster.FileService.Authorization.Codecs;
 using yumaster.FileService.Db.Options;
@@ -24,7 +23,6 @@ namespace yumaster.FileService.WebApi
     {
         private readonly IHostingEnvironment _env;
         private readonly IConfiguration _cfg;
-        private readonly string apiName = "文件服务";
         public Startup(IConfiguration cfg, IHostingEnvironment env)
         {
             _cfg = cfg;
