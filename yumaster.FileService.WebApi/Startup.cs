@@ -82,7 +82,7 @@ namespace yumaster.FileService.WebApi
 
             if (_env.IsDevelopment())
                 services.AddSwaggerService(PlatformServices.Default.Application.ApplicationBasePath);
-            #region Authorize 基于策略的授权（简单版）
+            #region Authorize 基于策略的授权
             services.AddAuthorization(options =>
             {
                 options.AddPolicy("Client", policy => policy.RequireRole("Client").Build());
@@ -99,8 +99,7 @@ namespace yumaster.FileService.WebApi
             {
                 x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                 x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            })
-             .AddJwtBearer(o =>
+            }).AddJwtBearer(o =>
              {
                  o.TokenValidationParameters = new TokenValidationParameters
                  {
