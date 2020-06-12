@@ -199,6 +199,26 @@ namespace yumaster.FileService.WebApi.Controllers
                     Status = false,
                     message = "用户名或密码不能为空"
                 });
+            }else
+            {
+                if(name!="yumaster")
+                {
+                    return new JsonResult(new
+                    {
+                        Status = false,
+                        message = "用户名不正确"
+                    });
+                }else
+                {
+                    if(pass!="zhangyunihao")
+                    {
+                        return new JsonResult(new
+                        {
+                            Status = false,
+                            message = "密码不正确"
+                        });
+                    }
+                }
             }
 
             TokenModelJWT tokenModel = new TokenModelJWT();

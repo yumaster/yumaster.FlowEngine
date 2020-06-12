@@ -49,7 +49,6 @@ namespace yumaster.FileService.Authorization.Utils
                };
 
             // 可以将一个用户的多个角色全部赋予；
-            // 作者：DX 提供技术支持；
             claims.AddRange(tokenModel.Role.Split(',').Select(s => new Claim(ClaimTypes.Role, s)));
 
 
