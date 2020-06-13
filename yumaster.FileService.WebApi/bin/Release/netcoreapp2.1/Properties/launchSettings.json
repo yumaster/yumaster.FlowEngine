@@ -12,18 +12,18 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "docs/apis",
+      "launchUrl": "",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Production"
+        "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
     "yumaster.FileService.WebApi": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "http://localhost:9001/docs/apis",
-      "applicationUrl": "http://localhost:9001",
+      "launchUrl": "",
+      "applicationUrl": "http://localhost:5001",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Production"
+        "ASPNETCORE_ENVIRONMENT": "Development"
       }
     }
   }

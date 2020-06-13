@@ -14,7 +14,7 @@ namespace yumaster.FileService.WebApi.Swagger
 
             app.UseSwagger(opts =>
             {
-                opts.RouteTemplate = "docs/apis/{documentName}/schema.json";
+                opts.RouteTemplate = "{documentName}/schema.json";
                 opts.PreSerializeFilters.Add((sDoc, httpReq) =>
                 {
                     var docName = (string)sDoc.Info.Extensions["docName"];
@@ -35,13 +35,13 @@ namespace yumaster.FileService.WebApi.Swagger
             });
             app.UseSwaggerUI(opts =>
             {
-                opts.RoutePrefix = "docs/apis";
+                opts.RoutePrefix = "";
                 opts.DocExpansion(DocExpansion.None);
                 opts.DocumentTitle = "API文档";
                 opts.EnableFilter();
 
-                opts.SwaggerEndpoint("/docs/apis/client/schema.json", "客户端");
-                opts.SwaggerEndpoint("/docs/apis/server/schema.json", "服务端");
+                opts.SwaggerEndpoint("/client/schema.json", "客户端");
+                opts.SwaggerEndpoint("/server/schema.json", "服务端");
             });
         }
     }
