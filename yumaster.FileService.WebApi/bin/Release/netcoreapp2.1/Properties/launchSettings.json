@@ -14,16 +14,16 @@
       "launchBrowser": true,
       "launchUrl": "docs/apis",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Production"
       }
     },
     "yumaster.FileService.WebApi": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "http://localhost:5001/docs/apis",
-      "applicationUrl": "http://localhost:5001",
+      "launchUrl": "http://localhost:9001/docs/apis",
+      "applicationUrl": "http://localhost:9001",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Production"
       }
     }
   }
