@@ -1,24 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\vscode\\master\\yumaster.FileService\\yumaster.FileService.Sdk.Server\\yumaster.FileService.Sdk.Server.csproj": {}
+    "D:\\vscode\\yumaster.FileService\\yumaster.FileService.Sdk.Server\\yumaster.FileService.Sdk.Server.csproj": {}
   },
   "projects": {
-    "D:\\vscode\\master\\yumaster.FileService\\yumaster.FileService.Authorization\\yumaster.FileService.Authorization.csproj": {
+    "D:\\vscode\\yumaster.FileService\\yumaster.FileService.Authorization\\yumaster.FileService.Authorization.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\vscode\\master\\yumaster.FileService\\yumaster.FileService.Authorization\\yumaster.FileService.Authorization.csproj",
+        "projectUniqueName": "D:\\vscode\\yumaster.FileService\\yumaster.FileService.Authorization\\yumaster.FileService.Authorization.csproj",
         "projectName": "yumaster.FileService.Authorization",
-        "projectPath": "D:\\vscode\\master\\yumaster.FileService\\yumaster.FileService.Authorization\\yumaster.FileService.Authorization.csproj",
-        "packagesPath": "C:\\Users\\yumas\\.nuget\\packages\\",
-        "outputPath": "D:\\vscode\\master\\yumaster.FileService\\yumaster.FileService.Authorization\\obj\\",
+        "projectPath": "D:\\vscode\\yumaster.FileService\\yumaster.FileService.Authorization\\yumaster.FileService.Authorization.csproj",
+        "packagesPath": "C:\\Users\\yumas_vgbwh5j\\.nuget\\packages\\",
+        "outputPath": "D:\\vscode\\yumaster.FileService\\yumaster.FileService.Authorization\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\yumas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\yumas_vgbwh5j\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
@@ -78,25 +79,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\vscode\\master\\yumaster.FileService\\yumaster.FileService.Sdk.Server\\yumaster.FileService.Sdk.Server.csproj": {
+    "D:\\vscode\\yumaster.FileService\\yumaster.FileService.Sdk.Server\\yumaster.FileService.Sdk.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\vscode\\master\\yumaster.FileService\\yumaster.FileService.Sdk.Server\\yumaster.FileService.Sdk.Server.csproj",
+        "projectUniqueName": "D:\\vscode\\yumaster.FileService\\yumaster.FileService.Sdk.Server\\yumaster.FileService.Sdk.Server.csproj",
         "projectName": "yumaster.FileService.Sdk.Server",
-        "projectPath": "D:\\vscode\\master\\yumaster.FileService\\yumaster.FileService.Sdk.Server\\yumaster.FileService.Sdk.Server.csproj",
-        "packagesPath": "C:\\Users\\yumas\\.nuget\\packages\\",
-        "outputPath": "D:\\vscode\\master\\yumaster.FileService\\yumaster.FileService.Sdk.Server\\obj\\",
+        "projectPath": "D:\\vscode\\yumaster.FileService\\yumaster.FileService.Sdk.Server\\yumaster.FileService.Sdk.Server.csproj",
+        "packagesPath": "C:\\Users\\yumas_vgbwh5j\\.nuget\\packages\\",
+        "outputPath": "D:\\vscode\\yumaster.FileService\\yumaster.FileService.Sdk.Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\yumas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\yumas_vgbwh5j\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
@@ -108,8 +110,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "D:\\vscode\\master\\yumaster.FileService\\yumaster.FileService.Authorization\\yumaster.FileService.Authorization.csproj": {
-                "projectPath": "D:\\vscode\\master\\yumaster.FileService\\yumaster.FileService.Authorization\\yumaster.FileService.Authorization.csproj"
+              "D:\\vscode\\yumaster.FileService\\yumaster.FileService.Authorization\\yumaster.FileService.Authorization.csproj": {
+                "projectPath": "D:\\vscode\\yumaster.FileService\\yumaster.FileService.Authorization\\yumaster.FileService.Authorization.csproj"
               }
             }
           }
@@ -148,7 +150,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

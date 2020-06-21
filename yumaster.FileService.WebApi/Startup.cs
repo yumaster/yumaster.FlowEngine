@@ -81,7 +81,12 @@ namespace yumaster.FileService.WebApi
             });
 
             //if (_env.IsDevelopment())
+<<<<<<< HEAD
                 services.AddSwaggerService(PlatformServices.Default.Application.ApplicationBasePath);
+=======
+            services.AddSwaggerService(PlatformServices.Default.Application.ApplicationBasePath);
+
+>>>>>>> 39ae02831ac85747ce4d5cdae0875b5b777083c5
             #region Authorize 基于策略的授权
             services.AddAuthorization(options =>
             {
@@ -117,19 +122,19 @@ namespace yumaster.FileService.WebApi
 
             #endregion
             //确保服务依赖的正确性，放到所有注册服务代码后调用
-            if (_env.IsDevelopment())
-            {
-                services.AddAutoReview(
-                    new DependencyInjectionAssert()
+            //if (_env.IsDevelopment())
+            //{
+            services.AddAutoReview(
+                new DependencyInjectionAssert()
+                {
+                    IgnoreTypes = new[]
                     {
-                        IgnoreTypes = new[]
-                        {
-                            "Microsoft.AspNetCore.Mvc.Razor.Internal.TagHelperComponentManager",
-                            "Microsoft.Extensions.DependencyInjection.IServiceScopeFactory"
-                        }
+                        "Microsoft.AspNetCore.Mvc.Razor.Internal.TagHelperComponentManager",
+                        "Microsoft.Extensions.DependencyInjection.IServiceScopeFactory"
                     }
-                );
-            }
+                }
+            );
+            //}
 
         }
 #if DEBUG_

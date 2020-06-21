@@ -60,13 +60,18 @@ namespace yumaster.FileService.WebApi
                     cfg.AddJsonFile("image-sizes.json", optional: false, reloadOnChange: true);
                     cfg.AddJsonFile("mimes.json", optional: false, reloadOnChange: true);
 
-                    if (env.IsDevelopment())
+                    //if (env.IsDevelopment())
+                    //{
+                    //    var appAssembly = Assembly.Load(new AssemblyName(env.ApplicationName));
+                    //    if (appAssembly != null)
+                    //    {
+                    //        cfg.AddUserSecrets(appAssembly, optional: true);
+                    //    }
+                    //}
+                    var appAssembly = Assembly.Load(new AssemblyName(env.ApplicationName));
+                    if (appAssembly != null)
                     {
-                        var appAssembly = Assembly.Load(new AssemblyName(env.ApplicationName));
-                        if (appAssembly != null)
-                        {
-                            cfg.AddUserSecrets(appAssembly, optional: true);
-                        }
+                        cfg.AddUserSecrets(appAssembly, optional: true);
                     }
                 })
                 .ConfigureLogging((ctx, logging) =>
@@ -85,6 +90,7 @@ namespace yumaster.FileService.WebApi
                     options.ValidateScopes = context.HostingEnvironment.IsDevelopment();
                 })
                 .UseSetting(WebHostDefaults.HostingStartupAssembliesKey, BuildHostingStartupAssemblies())
+                .UseUrls("http://*:9001")
                 .UseStartup<Startup>();
 
             return builder.Build();
