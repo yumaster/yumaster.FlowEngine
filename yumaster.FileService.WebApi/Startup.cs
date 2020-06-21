@@ -81,12 +81,9 @@ namespace yumaster.FileService.WebApi
             });
 
             //if (_env.IsDevelopment())
-<<<<<<< HEAD
-                services.AddSwaggerService(PlatformServices.Default.Application.ApplicationBasePath);
-=======
+                //services.AddSwaggerService(PlatformServices.Default.Application.ApplicationBasePath);
             services.AddSwaggerService(PlatformServices.Default.Application.ApplicationBasePath);
 
->>>>>>> 39ae02831ac85747ce4d5cdae0875b5b777083c5
             #region Authorize 基于策略的授权
             services.AddAuthorization(options =>
             {

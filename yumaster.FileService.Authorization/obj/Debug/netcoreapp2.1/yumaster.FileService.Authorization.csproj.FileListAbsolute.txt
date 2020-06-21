@@ -1,11 +1,3 @@
-D:\vscode\master\yumaster.FileService\yumaster.FileService.Authorization\bin\Debug\netcoreapp2.1\yumaster.FileService.Authorization.deps.json
-D:\vscode\master\yumaster.FileService\yumaster.FileService.Authorization\bin\Debug\netcoreapp2.1\yumaster.FileService.Authorization.dll
-D:\vscode\master\yumaster.FileService\yumaster.FileService.Authorization\bin\Debug\netcoreapp2.1\yumaster.FileService.Authorization.pdb
-D:\vscode\master\yumaster.FileService\yumaster.FileService.Authorization\obj\Debug\netcoreapp2.1\yumaster.FileService.Authorization.csproj.CoreCompileInputs.cache
-D:\vscode\master\yumaster.FileService\yumaster.FileService.Authorization\obj\Debug\netcoreapp2.1\yumaster.FileService.Authorization.AssemblyInfoInputs.cache
-D:\vscode\master\yumaster.FileService\yumaster.FileService.Authorization\obj\Debug\netcoreapp2.1\yumaster.FileService.Authorization.AssemblyInfo.cs
-D:\vscode\master\yumaster.FileService\yumaster.FileService.Authorization\obj\Debug\netcoreapp2.1\yumaster.FileService.Authorization.dll
-D:\vscode\master\yumaster.FileService\yumaster.FileService.Authorization\obj\Debug\netcoreapp2.1\yumaster.FileService.Authorization.pdb
 D:\vscode\yumaster.FileService\yumaster.FileService.Authorization\bin\Debug\netcoreapp2.1\yumaster.FileService.Authorization.deps.json
 D:\vscode\yumaster.FileService\yumaster.FileService.Authorization\bin\Debug\netcoreapp2.1\yumaster.FileService.Authorization.dll
 D:\vscode\yumaster.FileService\yumaster.FileService.Authorization\bin\Debug\netcoreapp2.1\yumaster.FileService.Authorization.pdb
@@ -15,3 +7,11 @@ D:\vscode\yumaster.FileService\yumaster.FileService.Authorization\obj\Debug\netc
 D:\vscode\yumaster.FileService\yumaster.FileService.Authorization\obj\Debug\netcoreapp2.1\yumaster.FileService.Authorization.csproj.CoreCompileInputs.cache
 D:\vscode\yumaster.FileService\yumaster.FileService.Authorization\obj\Debug\netcoreapp2.1\yumaster.FileService.Authorization.dll
 D:\vscode\yumaster.FileService\yumaster.FileService.Authorization\obj\Debug\netcoreapp2.1\yumaster.FileService.Authorization.pdb
+D:\vscode\master\yumaster.FileService\yumaster.FileService.Authorization\bin\Debug\netcoreapp2.1\yumaster.FileService.Authorization.deps.json
+D:\vscode\master\yumaster.FileService\yumaster.FileService.Authorization\bin\Debug\netcoreapp2.1\yumaster.FileService.Authorization.dll
+D:\vscode\master\yumaster.FileService\yumaster.FileService.Authorization\bin\Debug\netcoreapp2.1\yumaster.FileService.Authorization.pdb
+D:\vscode\master\yumaster.FileService\yumaster.FileService.Authorization\obj\Debug\netcoreapp2.1\yumaster.FileService.Authorization.csproj.CoreCompileInputs.cache
+D:\vscode\master\yumaster.FileService\yumaster.FileService.Authorization\obj\Debug\netcoreapp2.1\yumaster.FileService.Authorization.AssemblyInfoInputs.cache
+D:\vscode\master\yumaster.FileService\yumaster.FileService.Authorization\obj\Debug\netcoreapp2.1\yumaster.FileService.Authorization.AssemblyInfo.cs
+D:\vscode\master\yumaster.FileService\yumaster.FileService.Authorization\obj\Debug\netcoreapp2.1\yumaster.FileService.Authorization.dll
+D:\vscode\master\yumaster.FileService\yumaster.FileService.Authorization\obj\Debug\netcoreapp2.1\yumaster.FileService.Authorization.pdb

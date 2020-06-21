@@ -20,13 +20,8 @@
     "yumaster.FileService.WebApi": {
       "commandName": "Project",
       "launchBrowser": true,
-<<<<<<< HEAD
-      "launchUrl": "http://localhost:9001/docs/apis",
       "applicationUrl": "http://localhost:9001",
-=======
       "launchUrl": "",
-      "applicationUrl": "http://localhost:5001",
->>>>>>> 39ae02831ac85747ce4d5cdae0875b5b777083c5
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
