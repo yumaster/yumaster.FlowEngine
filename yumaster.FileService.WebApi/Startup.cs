@@ -80,7 +80,7 @@ namespace yumaster.FileService.WebApi
                 opt.AddPolicy("AllowAny", b => b.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin().AllowCredentials());
             });
 
-            if (_env.IsDevelopment())
+            //if (_env.IsDevelopment())
                 services.AddSwaggerService(PlatformServices.Default.Application.ApplicationBasePath);
             #region Authorize 基于策略的授权
             services.AddAuthorization(options =>
