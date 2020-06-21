@@ -90,7 +90,6 @@ namespace yumaster.FileService.WebApi
                     options.ValidateScopes = context.HostingEnvironment.IsDevelopment();
                 })
                 .UseSetting(WebHostDefaults.HostingStartupAssembliesKey, BuildHostingStartupAssemblies())
-                .UseUrls("http://*:9001")
                 .UseStartup<Startup>();
 
             return builder.Build();
