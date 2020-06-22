@@ -85,6 +85,7 @@ namespace yumaster.FileService.WebApi
                 {
                     opts.Limits.MaxRequestBodySize = 524288000;
                 })
+                .UseIISIntegration()
                 .UseDefaultServiceProvider((context, options) =>
                 {
                     options.ValidateScopes = context.HostingEnvironment.IsDevelopment();
